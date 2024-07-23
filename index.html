@@ -12,14 +12,14 @@
     <header class="Header">
         <a href="" class="logo">Portfolio</a>
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Projects</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#Home" style="--i:1" class="active">Home</a>
+            <a href="#About" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="#Portfolio" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
-    <section class="Home">
+    <section class="Home" id="Home">
         <div class="Home-Content">
             <h2>Welcome To My Portfolio!</h2>
             <h3>I am Pankaj Sharma <span class="Text"></span> </h3>
@@ -29,7 +29,7 @@
             <a href="https://github.com/PANKAJ-SHR" style="--i:6"><i class='bx bxl-github'></i></a>
             <a href="https://www.linkedin.com/in/i-am-pankaj-sharma" style="--i:7"><i class='bx bxl-linkedin' ></i></a>
         </div>
-        <a href="#" class="btn-box">More About Me</a>
+        <a href="#About" class="btn-box">More About Me</a>
     </div>
     </section> 
 
@@ -49,7 +49,7 @@
         </div>
     </section>
     <h1 class="My-Skills">My <span>Skills</span></h1>
-    <section class="Skills">
+    <section class="Skills" id="Skills">
         <div class="container1" id="skills">
             <h1 class="Heading1">Technical Skills</h1>
             <div class="technical-bars">
@@ -77,7 +77,7 @@
                         <span></span>
                     </div>
                 </div>
-                <div class="bars"> <i class='bx bxl-java' style='color:#c95d2e' ></i>
+                <div class="bars"> <i class='bx bxl-java' style='color:#bfc92e' ></i>
                     <div class="info">
                         <span>Java</span>
                     </div>
@@ -98,11 +98,108 @@
 
         <div class="container1">
             <h1 class="Heading1">Tools/Platforms</h1>
+            <div class="bars"> <i class='bx bxl-git' style='color:#1ebbe7'></i>
+                <div class="info">
+                    <span>Git/Github</span>
+                </div>
+                <div class="prograss-line Git/Github">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bars"> <i class='bx bxl-visual-studio' style='color:#511def'  ></i>
+                <div class="info">
+                    <span>Vs Code</span>
+                </div>
+                <div class="prograss-line Vs code">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bars"> <i class='bx bxs-data' style='color:#d01ee7'  ></i>
+                <div class="info">
+                    <span>MySQL</span>
+                </div>
+                <div class="prograss-line MySQL">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bars"> <i class='bx bxl-docker' style='color:#1ec6e7'></i>
+                <div class="info">
+                    <span>Docker</span>
+                </div>
+                <div class="prograss-line Docker">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bars"><i class='bx bxl-bootstrap' style='color:#e1f314'  ></i>
+                <div class="info">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="prograss-line Bootstrap">
+                    <span></span>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="Portfolio" id="Portfolio">
+        <div class="portfolio" id="portfolio-project">
+            <div class="main" id="portfolio-project">
+                <h2>Latest <span>Projects</span></h2>
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="./images/weather.jpg" alt="nothing">
+                        <div class="layers">
+                            <h4>Wheather App</h4>
+                            <p>This application, built using HTML, CSS, JavaScript, JSP, and Servlets, provides real-time weather updates and forecasts. Designed for a seamless user experience, it combines dynamic web technologies to deliver accurate and up-to-date weather information for any location in india.
+                            </p>
+                            <a href="https://github.com/PANKAJ-SHR/Weather-App"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <img src="./images/zerodha.jpg" alt="nothing" id="zerodha">
+                        <div class="layers">
+                            <h4>Zerodha Clone</h4>
+                           <p>
+                            Developing a clone of Zerodha to practice and enhance my skills in web development and financial technology, focusing on replicating key functionalities and features of the popular trading platform.Technologies used:Html, CSS, JavaScript.  
+                           </p>
+                            <!-- <a href="https://github.com/PANKAJ-SHR/Weather-App"><i class="bx bx-link-external" style="color: aliceblue;"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <div class="contact-list">
+                <li><i class='bx bxl-gmail' style='color:#04afa6'  ></i>pankaj@gmail.com</li>
+                <li><i class='bx bxs-mobile' style='color:#18e6db' ></i></i>0123456789</li>
+            </div>
+            <div class="contact-icon"> 
+                <a href="https://www.linkedin.com/in/i-am-pankaj-sharma"><i class='bx bxl-linkedin' style='color:#16e2d7' ></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="Text" placeholder="Enter Your Name" required>
+                <input type="Text" placeholder="Enter Your Email" required>
+                <input type="Text" placeholder="Enter Your Subject">
+                <textarea name="" id="" cols="35" rows="10" placeholder="Enter Your Message" required>
+                </textarea>
+                <input type="Submit" value="Submit" class="Submit">
+            </form>
+        </div>
+    </section>
+<div class="last-text">
+    <p>Developed By Pankaj Sharma @ 2024</p>
+</div>
+<a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
     <script src="main.js"></script>
+
 </body>
 </html>

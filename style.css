@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'poppies',''sans-serif;
 }
@@ -225,8 +226,293 @@ body{
 .technical-bars .bars:first-child{
     margin-top:  0;
 }
+.technical-bars .bars:last-child{
+    margin-top:  0;
+}
+.technical-bars .bars .info{
+    margin-bottom: 5;
+}
+/* .technical-bars .bars .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+} */
+/* .technical-bars .bars .prograss-line{
+   position: relative;
+   border-radius: 10px;
+   width: 5px;
+   background-color: black;
+   animation: animate is cubic-bezier(1,0,0,5,1) forwards;
+   transform: scaleX(0);
+   transform-origin: left; 
+}*/
+/* .technical-bars .bars .prograss-line span{
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s is cubic-bezier(1, 0, 5, 1) forwards; 
+    transform: scaleX(0);
+    transform-origin: left;
+} */
+/* .prograss-line .HTML span{
+    width: 90%;
+}
+.prograss-line .CSS span{
+    width: 80%;
+}
+.prograss-line .JavaScript span{
+    width: 85%;
+}
+.prograss-line .Java span{
+    width: 90%;
+}
+.prograss-line .Python span{
+    width: 90%;
+} */
 
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.main{
+    padding-top: 130px;
+    margin-top: 50px;
+    h2 span{
+        color: #0ef;
+    }
+}
+
+.main h2{
+        margin: 0 0 120px 540px;
+        font-size: 60px;
+        line-height: 1;
+        text-align: center;
+    
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+}
+
+.row{
+    padding-left: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    /* padding-left: 150px; */
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+
+}
+
+.row img #zerodha{
+    width: 469px;
+    height: 429px;
+}
+
+.layers{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0,1),#0ef);
+    position: absolute;
+    border-radius: 7px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layers h4{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layers p{
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.0;
+}
+.layers i{
+    color: red;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.row:hover{
+    transform:scale(1.1);
+}
+.row:hover .layers{
+    height: 100%;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact-content h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    span{
+        color: #0ef;
+    }
+}
+
+.contact-content h4{
+    margin: 15px 0;
+    color: rgb(228,228,228);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact-list li:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.contact-icon i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.contact-icon i:hover{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input,form textarea{
+        border: none;
+        outline: none;
+        width: 90%;
+        padding: 18px;
+        background: #d2d2d4;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-radius:0.5rem ;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 19px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25 cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgba(7,85,91);
+    font-weight: 300;
+    margin-top: 50px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2,1rem;
+
+}
+
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+@keyframes animate{
+   
+    100%{
+        transform: scaleX(1);
+    }
+}
 
 @keyframes slideRight{
     0%{
